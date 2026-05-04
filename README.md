@@ -3,36 +3,40 @@
 
 **A RESTful API for managing a library system — built with Spring Boot and secured with Basic Authentication. Supports book management, user management, and borrowing operations.
 ✅ Spring Security ✅ JWT Authentication ✅ Role-Based Access Control (RBAC) ✅ RESTful API Design ✅ CRUD Operations✅ OOP COncepts ✅ MysqlServer**
----
+## 📁 Project Structure
+
+```text
 src/main/java/com/yourpackage/
 │
 ├── Controller/
 │   ├── AuthController.java        # Handles authentication (login/register)
 │   ├── BookController.java        # Manages books (CRUD)
-│   ├── BorrowController.java      # Handles borrowing/return operations
-│   └── UserController.java        # Manages users
+│   ├── BorrowController.java     # Handles borrowing/return operations
+│   └── UserController.java       # Manages users
 │
 ├── Models/
-│   ├── Book.java                  # Book entity
-│   ├── Borrow.java                # Borrow entity
-│   ├── User.java                  # User entity
-│   └── UserType.java              # Enum (ADMIN / USER)
+│   ├── Book.java                 # Book entity
+│   ├── Borrow.java               # Borrow entity
+│   ├── User.java                 # User entity
+│   └── UserType.java             # Enum (ADMIN / USER)
 │
 ├── Repository/
-│   ├── BookRepo.java              # Database operations for books
-│   ├── BorrowRepo.java            # Database operations for borrow
-│   └── UserRepo.java              # Database operations for users
+│   ├── BookRepo.java             # Database operations for books
+│   ├── BorrowRepo.java           # Database operations for borrow
+│   └── UserRepo.java             # Database operations for users
 │
 ├── Security/
 │   ├── SecurityConfiguration.java # Spring Security configuration
 │   └── UserDetailsServicee.java   # Load user details for authentication
 │
 ├── Services/
-│   ├── BookService.java           # Business logic for books
-│   ├── BorrowService.java         # Business logic for borrowing
-│   └── UserService.java           # Business logic for users
+│   ├── BookService.java          # Business logic for books
+│   ├── BorrowService.java        # Business logic for borrowing
+│   └── UserService.java          # Business logic for users
 │
 └── LibararyManagmentSystemApplication.java
+    # Main application entry point
+```
     # نقطة تشغيل التطبيق (Main Class)
 ## 🚀 Base URL
 

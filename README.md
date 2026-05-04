@@ -1,8 +1,10 @@
 # LibararyManagmentSystem_BackEnd
 # 📚 Library Management System API
 ```text
-**A RESTful API for managing a library system — built with Spring Boot and secured with Basic Authentication. Supports book management, user management, and borrowing operations.
-✅ Spring Security ✅ JWT Authentication ✅ Role-Based Access Control (RBAC) ✅ RESTful API Design ✅ CRUD Operations✅ OOP COncepts ✅ MysqlServer**
+**A RESTful API for managing a library system — built with Spring Boot and secured with Basic Authentication.
+Supports book management, user management, and borrowing operations.
+✅ Spring Security ✅ JWT Authentication ✅ Role-Based Access Control (RBAC)
+✅ RESTful API Design ✅ CRUD Operations✅ OOP COncepts ✅ MysqlServer **
 ## 📁 Project Structure'''
 
 ```text

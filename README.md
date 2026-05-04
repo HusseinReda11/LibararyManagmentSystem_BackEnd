@@ -1,36 +1,36 @@
 # LibararyManagmentSystem_BackEnd
 # 📚 Library Management System API
 
-A RESTful API for managing a library system — built with Spring Boot and secured with Basic Authentication. Supports book management, user management, and borrowing operations.
-✅ Spring Security ✅ JWT Authentication ✅ Role-Based Access Control (RBAC) ✅ RESTful API Design ✅ CRUD Operations✅ OOP COncepts ✅ MysqlServer
+**A RESTful API for managing a library system — built with Spring Boot and secured with Basic Authentication. Supports book management, user management, and borrowing operations.
+✅ Spring Security ✅ JWT Authentication ✅ Role-Based Access Control (RBAC) ✅ RESTful API Design ✅ CRUD Operations✅ OOP COncepts ✅ MysqlServer**
 ---
 src/main/java/com/yourpackage/
 │
 ├── Controller/
-│   ├── AuthController.java        # مسئول عن تسجيل الدخول والتسجيل (Authentication)
-│   ├── BookController.java        # إدارة الكتب (إضافة - تعديل - عرض)
-│   ├── BorrowController.java      # عمليات الاستعارة والإرجاع
-│   └── UserController.java        # إدارة المستخدمين
+│   ├── AuthController.java        # Handles authentication (login/register)
+│   ├── BookController.java        # Manages books (CRUD)
+│   ├── BorrowController.java      # Handles borrowing/return operations
+│   └── UserController.java        # Manages users
 │
 ├── Models/
-│   ├── Book.java                  # كيان يمثل الكتاب
-│   ├── Borrow.java                # كيان يمثل عملية الاستعارة
-│   ├── User.java                  # كيان المستخدم
-│   └── UserType.java              # Enum لأنواع المستخدمين (ADMIN / USER)
+│   ├── Book.java                  # Book entity
+│   ├── Borrow.java                # Borrow entity
+│   ├── User.java                  # User entity
+│   └── UserType.java              # Enum (ADMIN / USER)
 │
 ├── Repository/
-│   ├── BookRepo.java              # التعامل مع قاعدة البيانات للكتب
-│   ├── BorrowRepo.java            # التعامل مع الاستعارات
-│   └── UserRepo.java              # التعامل مع المستخدمين
+│   ├── BookRepo.java              # Database operations for books
+│   ├── BorrowRepo.java            # Database operations for borrow
+│   └── UserRepo.java              # Database operations for users
 │
 ├── Security/
-│   ├── SecurityConfiguration.java # إعدادات Spring Security
-│   └── UserDetailsServicee.java   # تحميل بيانات المستخدم أثناء تسجيل الدخول
+│   ├── SecurityConfiguration.java # Spring Security configuration
+│   └── UserDetailsServicee.java   # Load user details for authentication
 │
 ├── Services/
-│   ├── BookService.java           # منطق التعامل مع الكتب (Business Logic)
-│   ├── BorrowService.java         # منطق الاستعارة
-│   └── UserService.java           # منطق المستخدمين
+│   ├── BookService.java           # Business logic for books
+│   ├── BorrowService.java         # Business logic for borrowing
+│   └── UserService.java           # Business logic for users
 │
 └── LibararyManagmentSystemApplication.java
     # نقطة تشغيل التطبيق (Main Class)

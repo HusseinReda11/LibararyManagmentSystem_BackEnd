@@ -1,4 +1,3 @@
-# LibararyManagmentSystem_BackEnd
 # 📚 Library Management System API
 ```text
 **A RESTful API for managing a library system — built with Spring Boot and secured with Basic Authentication.

@@ -1,11 +1,39 @@
 # LibararyManagmentSystem_BackEnd
-✅ Spring Security ✅ JWT Authentication ✅ Role-Based Access Control (RBAC) ✅ RESTful API Design ✅ CRUD Operations✅ OOP COncepts ✅ MysqlServer
 # 📚 Library Management System API
 
 A RESTful API for managing a library system — built with Spring Boot and secured with Basic Authentication. Supports book management, user management, and borrowing operations.
-
+✅ Spring Security ✅ JWT Authentication ✅ Role-Based Access Control (RBAC) ✅ RESTful API Design ✅ CRUD Operations✅ OOP COncepts ✅ MysqlServer
 ---
-
+src/main/java/com/yourpackage/
+│
+├── Controller/
+│   ├── AuthController.java        # مسئول عن تسجيل الدخول والتسجيل (Authentication)
+│   ├── BookController.java        # إدارة الكتب (إضافة - تعديل - عرض)
+│   ├── BorrowController.java      # عمليات الاستعارة والإرجاع
+│   └── UserController.java        # إدارة المستخدمين
+│
+├── Models/
+│   ├── Book.java                  # كيان يمثل الكتاب
+│   ├── Borrow.java                # كيان يمثل عملية الاستعارة
+│   ├── User.java                  # كيان المستخدم
+│   └── UserType.java              # Enum لأنواع المستخدمين (ADMIN / USER)
+│
+├── Repository/
+│   ├── BookRepo.java              # التعامل مع قاعدة البيانات للكتب
+│   ├── BorrowRepo.java            # التعامل مع الاستعارات
+│   └── UserRepo.java              # التعامل مع المستخدمين
+│
+├── Security/
+│   ├── SecurityConfiguration.java # إعدادات Spring Security
+│   └── UserDetailsServicee.java   # تحميل بيانات المستخدم أثناء تسجيل الدخول
+│
+├── Services/
+│   ├── BookService.java           # منطق التعامل مع الكتب (Business Logic)
+│   ├── BorrowService.java         # منطق الاستعارة
+│   └── UserService.java           # منطق المستخدمين
+│
+└── LibararyManagmentSystemApplication.java
+    # نقطة تشغيل التطبيق (Main Class)
 ## 🚀 Base URL
 
 ```
